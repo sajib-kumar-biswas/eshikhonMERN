@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table practice</title>
+    <style>
+        table,td,th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        tr:nth-child(5) {
+            background-color: goldenrod;
+            color: white;
+        }
+        td,th{
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Tables</h1>
+    <h3>demo 1 general</h3>
+    <table width="100%">
+        <tr>
+            <th width="50%">Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr height="100px">
+            <td>Solution</td>
+            <td>sajib biswas</td>
+            <td>Dhaka</td>
+        </tr>
+    </table>
+
+
+    <h3>demo 2 html table headers</h3>
+    <table width="100%">
+        <tr>
+            <th></th>
+            <th>MON</th>
+            <th>TUES</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+        </tr>
+        <tr>
+            <th>8:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>9:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>10:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>11:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>12:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h3>demo 3 html table colspan & rowspan 1</h3>
+    <table width="100%">
+        <tr>
+            <th colspan="2">Name</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <td>sajib</td>
+            <td>biswas</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>foisal</td>
+            <td>hasan</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>naim</td>
+            <td>islam</td>
+            <td>24</td>
+        </tr>
+    </table>
+
+
+    <h3>demo 3 html table colspan & rowspan 2</h3>
+    <table width="100%">
+        <tr>
+            <th width="50%" rowspan="3">april</th>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>may</th>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>june</th>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>july</th>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h3>demo 3 html table colspan & rowspan 2</h3>
+    <table width="100%">
+        <tr>
+            <th colspan="3">2022</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2">FIESTA</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Selectors</title>
+</head>
+<body>
+    <h1>Example of selecting html element by it's tag name.</h1>
+
+
+    <h2 class="group1">Example of grouping more than one element and design it alike.</h2>
+    <h3 id="group2">Example of grouping more than one element and design it alike 2.</h3>
+
+
+    <p class="colored">a paramgraph element with the class name "colored"</p>
+    <p class="colored aligned">a paramgraph element with the class name "colored & aligned"</p>
+    <p class="colored">a paramgraph element with the class name "colored"</p>
+    <p class="colored aligned">second paramgraph element with the class name "colored & aligned"</p>
+
+
+    <div class="colored">
+        <p class="aligned">parent class is "colored" & child class is "aligned"</p>
+    </div>
+    <div class="aligned">
+        <p class="colored">parent class is "aligned" & child class is "colored"</p>
+    </div>
+    <div class="colored aligned">
+        this text own both class name. so it behaves like the previous one.
+    </div>
+    <div class="parent">
+        <div class="colored">
+            <p class="aligned">grand-parent class is "parent" & parent class is "colored" & child class is "aligned"</p>
+            <p class="aligned">grand-parent class is "parent" & parent class is "colored" & child class is "aligned" 2</p>
+        </div>
+    </div>
+
+
+    <div>
+        <a href="#">
+            span as container & div direct parent container
+        </a>
+        <div>
+            <span>
+                <a href="#">a as container but div grand parent container 1</a>
+            </span>
+            <span>
+                <a href="#">a as container but div grand parent container 2</a>
+            </span>
+        </div>
+    </div>
+
+    <table style="margin-top:50px;">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>email</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="fname" placeholder="first name">
+            </td>
+            <td>
+                <input type="text" name="lname" placeholder="last name">
+            </td>
+            <td>
+                <input type="email" name="email" placeholder="email">
+            </td>
+        </tr>
+    </table>
+
+    <form>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label><br>
+        <input type="submit" value="Send">
+    </form>
+
+    <form>
+        <input type="checkbox" name="bike" id="bike" value="true">
+        <label for="bike">I have a bike.</label><br>
+        <input type="checkbox" name="car" id="car" value="true">
+        <label for="car">I have a car.</label><br>
+        <input type="checkbox" name="phone" id="phone" value="true">
+        <label for="phone">I have a phone.</label><br>
+        <input type="checkbox" name="laptop" id="laptop" value="true">
+        <label for="laptop">I have a laptop.</label><br>
+        <input type="checkbox" name="nothing" id="nothing" value="true">
+        <label for="nothing">I like radio button.</label><br>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>

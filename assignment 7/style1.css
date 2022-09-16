@@ -1,0 +1,55 @@
+
+/* flex-direction : row*/
+.flex-container {
+    background-color: darkblue;
+    padding: 10px;
+    display: flex;
+}
+
+/* flex-direction : column*/
+.flex-container1 {
+    background-color: darkblue;
+    padding: 10px;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+/* grouping & direct descendent */
+.container2>div, .container1>div, .flex-container1>div, .flex-container>div {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    color: black;
+}
+
+/* flex-wrap and nowrap */
+
+.container1,.container2 {
+    padding: 10px;
+    background-color: blueviolet;
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    height: 200px;
+}
+
+/* align-content property vertically align flex-line */
+.container1 {
+    align-content: space-between;
+}
+
+.container2 {
+    /* justify-content: center; */
+    /* justify-content: flex-start; */ /* default */
+    /* justify-content: flex-end; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+
+    /* align-items: baseline; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: stretch; */  /* default */
+    align-items: center;
+}

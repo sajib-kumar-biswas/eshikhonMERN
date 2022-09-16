@@ -1,0 +1,65 @@
+/* global selector */
+* {
+    font-size: 20px;
+}
+
+/* element or tag selector */
+h1 {
+    background-color: #483838;
+    color: white;
+    width: 70vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* grouping more than one element using comma */
+h2.group1, h3#group2 {
+    background-color: #42855B;
+    color: white;
+    width: 80vw;
+    margin: 10px auto 0;
+    text-align: center;
+}
+
+/* .class1.class2 */
+.colored.aligned {
+    color: royalblue;
+    text-align: center;
+}
+
+/* descendents */
+.colored .aligned {
+    color: #D07000;
+    text-align: center;
+}
+
+/* direct parent container */
+div>a {
+    text-decoration: none;
+}
+
+div>a:hover {
+    font-size: 150%;
+    color: royalblue;
+}
+
+/* input:hover */
+table input:hover {
+    height: 30px;
+    width: 30vw;    
+}
+
+th:nth-child(3) {
+    color: blue;
+}
+
+table input:focus {
+    border: 3px solid gold;
+    background-color: green;
+    color: white;
+}
+
+input:checked {
+    height: 50px;
+    width: 50px;
+}

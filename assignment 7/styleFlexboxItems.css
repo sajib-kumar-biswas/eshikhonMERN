@@ -1,0 +1,41 @@
+/* flex items property */
+.container1 {
+    padding: 10px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.container1>div {
+    padding: 20px;
+    background-color:darkcyan;
+    color: white;
+    margin: 0 10px;
+}
+
+.div11 {
+    align-self: flex-start;
+}
+
+.container2 {
+    padding: 10px;
+    background-color: aliceblue;
+    display: flex;
+    height: 200px;
+}
+
+.container2>div{
+    padding: 20px;
+    background-color:darkcyan;
+    color: white;
+    /* margin: 0 10px; */
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container2>div:hover {
+    flex-grow: 4;
+}

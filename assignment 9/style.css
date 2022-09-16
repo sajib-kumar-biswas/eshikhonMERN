@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100vw;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.sidebar {
+    flex: 25%;
+    background-color: black;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sideTop {
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profileImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgb(91, 92, 90);
+    margin: 10px;
+}
+
+.socialContainer {
+    display: flex;
+    margin-top: 10px;
+}
+
+.socialContainer i {
+    background-color: rgb(43, 41, 41);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;    
+}
+
+.socialContainer i:hover {
+    background-color:rgb(11, 73, 241);
+    cursor: pointer;
+}
+
+.sideMid {
+    padding: 20px;
+    flex: 50%;
+}
+
+.sideMid>a {
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.sideMid>a:hover {
+    background-color:rgb(11, 73, 241);
+    cursor: pointer;
+}
+
+.sideMid>a .icon {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.sideBottom {
+    flex: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* content section */
+.content {
+    flex: 75%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.content>div {
+    width: 100%;
+    min-height: 100vh;
+}
+/* main section */
+#main {
+    background-image: url(./images/hero_background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* common properties */
+
+.common {
+    background-color: white;
+    padding: 40px 10px;
+}
+
+.common h1 {
+    color: #1C3879;
+    padding: 20px 0px;
+}
+.common hr {
+    width: 5%;
+    height: 3px;
+    background-color: #277BC0;
+}
+.common p {
+    margin: 10px 0;
+    font-size: 1.4rem;
+}
+
+/* services section */
+
+#services {
+
+}
+
+.worksContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work {
+    flex: 30%;
+    margin: 5px;
+}
+
+.work img{
+    width: 100%;
+    object-fit: cover;
+}

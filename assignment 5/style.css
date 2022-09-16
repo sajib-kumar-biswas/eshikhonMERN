@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.backAttachment {
+    border: 2px solid black;
+    background-image: url('./images/1.jpeg');
+    color: white;
+    background-attachment: fixed;
+    /* background-attachment: scroll; */
+}
+
+.backColor {
+    background-color: blueviolet;
+    color: white;
+}
+
+.linearGradient {
+    height: 200px;
+}
+
+.grad1 {
+    /* default : 0deg to 180deg = top to bottom and receive two colors*/
+    background-image: linear-gradient(#472D2D, #A77979);
+}
+
+.grad2 {
+    background-image: linear-gradient(45deg, #483838, #D2D79F);
+}
+
+.grad3 {
+    background-image: linear-gradient(135deg, #B9FFF8, #6FEDD6, #FF9551, #FF4A4A);
+}
+
+.grad4 {
+    background-image: linear-gradient(-180deg, #B9FFF8, #6FEDD6, #FF9551, #FF4A4A);
+}
+
+
+/* background position and repeat property */
+.backPosition {
+    background-image: url(./images/2.jpeg);
+    text-align: center;
+    background-position: center center; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border: 2px solid;
+}
+
+.backSizeContain {
+    height: 200px;
+    border: 2px solid;
+    background-image: url('./images/4.jpeg');
+    background-size: contain;
+    /* keeps its aspect ratio and contained in the container and then to cover the whole container , it repeat its self as many time it needs */
+}
+
+.backSizeCover {
+    height: 200px;
+    margin-top: 10px;
+    border: 2px solid;
+    background-image: url('./images/4.jpeg');
+    background-size: cover;
+    /* use single image and always covers the whole container */
+}
+
+.backSizeCover2{
+    height: 1000px;
+    margin-top: 10px;
+    border: 2px solid;
+    background-image: url('./images/4.jpeg');
+    background-size: cover;
+    /* use single image and keeps its aspect ratio and increase/decrease as required */
+}

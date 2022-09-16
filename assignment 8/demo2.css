@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:cornflowerblue
+}
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: blueviolet;
+    color: white;
+    margin-top: 5px;
+}
+.imgContainer{
+    margin-right: 20px;
+}
+.profileImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}

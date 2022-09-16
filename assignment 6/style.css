@@ -1,0 +1,112 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* nearest positioned ancestor for child2 */
+.parent1 {
+    height: 200px;
+    background-color: blueviolet;
+    position: relative;
+}
+
+/* positioned relative */
+.child1 {
+    background-color: brown;
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+    left: -20px;
+}
+
+/* positioned absolute */
+.child2 {
+    background-color: burlywood;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+/* nearest positioned ancestor for child22 */
+.parent2 {
+    height: 200px;
+    background-color: blueviolet;
+    margin: 20px;
+}
+
+.child21 {
+    height: 100px;
+    background-color: brown;
+    position: relative;
+}
+
+.child22 {
+    height: 50px;
+    background-color: burlywood;
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+}
+
+
+/* z-index */
+
+.parent3 {
+    padding: 20px;
+    background-color: blueviolet;
+}
+
+.sibling1, .sibling2, .sibling3 {
+    height: 200px;
+    position: relative;
+    width: 80%;
+}
+.sibling1 {
+    background-color: aliceblue;
+}
+
+.sibling2 {
+    background-color:antiquewhite;
+    left: 20px;
+    top: -20px;
+    z-index: 1;
+}
+.sibling3 {
+    background-color:aqua;
+    left: 40px;
+    top: -40px;
+}
+
+.sibling11, .sibling12, .sibling21, .sibling22, .sibling31, .sibling32 {
+    height: 50px;
+    position: absolute;
+}
+.sibling11 {
+    background-color: chartreuse;
+    z-index: 1;
+    left: 20px;
+}
+.sibling12 {
+    background-color:chocolate;
+}
+.sibling21 {
+    background-color: coral;
+    z-index: 1;
+    left: 20px;
+}
+.sibling22 {
+    background-color:cornflowerblue;
+}
+.sibling31 {
+    background-color: cornsilk;
+    z-index: 1;
+    left: 20px;
+}
+.sibling32 {
+    background-color:crimson;
+}
